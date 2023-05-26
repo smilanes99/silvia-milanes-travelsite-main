@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greece</title>
+  <link href="../css/global.css" rel="stylesheet" />
+  <link href="../css/destinations.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="header-nav">
+      <h2><a href="../index.html" style="text-decoration:none;color:#335576" ;>Travel site</a></h2>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="hawaii.html">Hawaii</a></li>
+        <li> <a href="iceland.html">Iceland</a></li>
+        <li> <a href="greece.html" class="active">Greece</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="greece-section" style="background-image: url(../assets/Images/greece.jpg);background-size: cover;">
+    <h1 class="greece-title">Greece</h1>
+    <div class="greece-card-container">
+      <div class="greece-card">
+        <h3>Friday</h3>
+        <p class="greece-card-itinerary">
+          <li>Breakfast</li>
+          <li>Lunch</li>
+          <li>Dinner</li>
+          <li>Dancing</li>
+        </p>
+      </div>
+      <div class="greece-card">
+        <h3>Saturday</h3>
+        <p class="greece-card-itinerary">
+          <li>Breakfast</li>
+          <li>Lunch</li>
+          <li>Dinner</li>
+          <li>Dancing</li>
+        </p>
+      </div>
+      <div class="greece-card">
+        <h3>Sunday</h3>
+        <p class="greece-card-itinerary">
+          <li>Breakfast</li>
+          <li>Lunch</li>
+          <li>Dinner</li>
+          <li>Dancing</li>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="weather-section" style="background-image: url(../assets/Images/clouds.png);background-size: cover;">
+    <h2>Current Weather for Greece</h2>
+
+    <div id="weather-results">
+        <!-- Weather results will be populated here -->
+    </div>
+</section>
+
+<script>
+    fetch(`http://api.weatherapi.com/v1/current.json?key=b0e878a115654f93b0c192141230805&q=Greece`)
+        .then(response => response.json())
+        .then(data => {
+            var results = document.getElementById('weather-results');
+            results.innerHTML = `
+                
+                <p>Temperature (F): ${data.current.temp_f}</p>
+                <p>Rain: ${data.current.precip_in} </p>
+                <p>Humidity (%): ${data.current.humidity}</p>
+                <p>Wind Speed (mph): ${data.current.wind_mph}</p>
+            `;
+        })
+        .catch(error => console.error('Error:', error));
+</script>
+    
+</body>
+
+</html>

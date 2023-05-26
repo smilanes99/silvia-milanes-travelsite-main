@@ -1,0 +1,183 @@
+.hawaii-section {
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hawaii-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10.8125rem;
+}
+.hawaii-title {
+  margin-top: -19.75rem;
+  color: #ffffff;
+  font-size: 4.375rem;
+}
+.hawaii-card > li {
+  padding-bottom: 10px;
+  margin: 5px;
+  background-color: #fefaf5;
+  width: 90%;
+}
+.hawaii-card {
+  width: 15.5rem;
+  height: 18.625rem;
+  background-color: #ffffff;
+  margin: 0 20px;
+  list-style: none;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hawaii-section .hawaii-card h3 {
+  border-bottom: 2px solid black;
+  width: 90%;
+}
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+/* GREECE SECTION*/
+
+.greece-section {
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.greece-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10.8125rem;
+}
+.greece-title {
+  margin-top: -19.75rem;
+  color: #ffffff;
+  font-size: 4.375rem;
+}
+.greece-card > li {
+  padding-bottom: 10px;
+  margin: 5px;
+  background-color: #fefaf5;
+  width: 90%;
+}
+.greece-card {
+  width: 15.5rem;
+  height: 18.625rem;
+  background-color: #ffffff;
+  margin: 0 20px;
+  list-style: none;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.greece-section .greece-card h3 {
+  border-bottom: 2px solid black;
+  width: 90%;
+}
+
+/*ICELAND SECTION*/
+
+.iceland-section {
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.iceland-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10.8125rem;
+}
+.iceland-title {
+  margin-top: -19.75rem;
+  color: #ffffff;
+  font-size: 4.375rem;
+}
+.iceland-card > li {
+  padding-bottom: 10px;
+  margin: 5px;
+  background-color: #fefaf5;
+  width: 90%;
+}
+.iceland-card {
+  width: 15.5rem;
+  height: 18.625rem;
+  background-color: #ffffff;
+  margin: 0 20px;
+  list-style: none;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.iceland-section .iceland-card h3 {
+  border-bottom: 2px solid black;
+  width: 90%;
+}
+
+.weather-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #335576;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../assets/Images/clouds.png");
+}
+
+.weather-section h2 {
+  color: white;
+}
+
+
+.weather-section p {
+  color: #335576;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+#weather-results {
+background-color: #fefaf5;
+border-radius: 20px;
+padding: 10px;
+}
+
+.hawaii-card:hover, .greece-card:hover, .iceland-card:hover {
+  box-shadow: 0px 0px 50px #335576;
+  transition: box-shadow 0.3s ease-in-out;
+}

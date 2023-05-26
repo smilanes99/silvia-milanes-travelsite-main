@@ -1,0 +1,113 @@
+header {
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.hero-section {
+  background-color: #fefaf5;
+  font-size: larger;
+  padding-top: 12.5rem;
+  display: flex;
+}
+.hero-title {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.hero-content {
+  font-size: 1.25rem;
+  color: #335576;
+  margin-left: 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-image {
+  background-color: #fefaf5;
+  padding-left: 37.5rem;
+  margin-top: -12.5rem;
+}
+
+.hero-button {
+  border: #fefaf5;
+  color: #ffffff;
+  background-color: #DB7A4E;
+  border-radius: 1.25rem;
+  width: 12.5rem;
+  height: 3.125rem;
+  font-size: larger;
+  display: inline;
+  position: relative;
+  bottom: 9.375rem;
+}
+.hero-button:hover {color: #DB7A4E;
+background-color: #ffffff;}
+.hero-description {
+  position: relative;
+}
+.recommendations {
+  text-align: center;
+  margin-top: 3.125rem;
+}
+.card-container-title {
+  color: #335576;
+  font-size: 3.125rem;
+  margin-left: 30px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  width: 31.25rem;
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+.hawaii__card {
+  background: url(../assets/Images/hawaii.jpg);
+  background-size: cover;
+}
+.greece__card {
+  background: url(../assets/Images/greece.jpg);
+  background-size: cover;
+}
+
+.iceland__card {
+  background: url(../assets/Images/iceland.jpg);
+  background-size: cover;
+}
+
+.hawaii__card,
+.iceland__card,
+.greece__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 28.125rem;
+  margin: 0 10px;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.hawaii-card-content,
+.iceland-card-content,
+.greece-card-content {
+  margin-top: 21.875rem;
+  margin-left: 5.625rem;
+  color: white;
+  font-size: 1.875rem;
+}
+.hawaii__card:hover, .greece__card:hover, .iceland__card:hover {
+  box-shadow: 0px 0px 30px rgba(0, 145, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
